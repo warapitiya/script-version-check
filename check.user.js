@@ -20,7 +20,7 @@
     wogaaCheckBanner.style.right="0px";
     wogaaCheckBanner.style.top="0px";
     wogaaCheckBanner.style.color="white";
-    var scriptTag = document.querySelectorAll("script[src='https://assets.wogaa.sg/scripts/wogaa.js']");
+    var scriptTag = document.querySelectorAll("script[src*='https://assets.wogaa.sg/scripts/wogaa.js']");
     var isLaunch = scriptTag.length > 0;
 
 
