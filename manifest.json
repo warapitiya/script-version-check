@@ -1,0 +1,31 @@
+{
+  "name": "WOGAA Info",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Get information about WOGAA",
+  "homepage_url": "http://wogaa.sg",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "WOGAA Info",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "src/browser_action/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://*/*"
+  ]
+}
